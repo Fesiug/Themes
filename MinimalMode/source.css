@@ -2,9 +2,9 @@
 	color: var(--channels-default);
 
 	/* Variables */
-	--guildbar-width: 56px;
+	--guildbar-width: 80px;
 	--sidebar-width: 200px;
-	--header-height: 40px;
+	--header-height: 35px;
 }
 
 /* Makes all member list/"channel information" areas work */
@@ -51,7 +51,7 @@
 }
 
 .container-YkUktl {
-	height: 45px;
+	height: 42px;
 }
 
 /* Header container heights */
@@ -188,25 +188,25 @@
 /* Messages */
 
 .cozy-VmLDNB.wrapper-30-Nkg .avatar-2e8lTP {
-	transform: scale(0.75);
+	transform: scale(1.2);
 	width: 32px;
 	height: 32px;
 }
 
 .cozy-VmLDNB.wrapper-30-Nkg {
-	padding-left: 64px;
+	padding-left: 62px;
 }
 
 .buttons-3dF5Kd {
-	transform: scale(0.75);
+	transform: scale(1);
 	transform-origin: right;
 }
 
 /* Chat input */
 
 .form-3gdLxP {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* Guilds */
@@ -260,6 +260,51 @@
 .expandedFolderBackground-1kSAf6 {
 	left: calc(var(--guildbar-width) * 0.2) !important;
 	width: calc(var(--guildbar-width) * 0.625) !important;
+}
+
+/* Private channels horizontal icons */
+
+.channel-1Shao0[href='/channels/@me'],
+.channel-1Shao0[href='/discovery'],
+.channel-1Shao0[href='/library'],
+.channel-1Shao0[href='/store'] {
+	width: calc(25% - 8px);
+	margin-left: 8px;
+	padding: 0;
+	display: inline-block;
+}
+
+.channel-1Shao0[href='/channels/@me'] .content-1U25dZ,
+.channel-1Shao0[href='/discovery'] .content-1U25dZ,
+.channel-1Shao0[href='/library'] .content-1U25dZ,
+.channel-1Shao0[href='/store'] .content-1U25dZ,
+.channel-1Shao0[href='/channels/@me'] .children-283-lq,
+.channel-1Shao0[href='/discovery'] .children-283-lq,
+.channel-1Shao0[href='/library'] .children-283-lq,
+.channel-1Shao0[href='/store'] .children-283-lq {
+	display: none;
+}
+
+.channel-1Shao0[href='/channels/@me'] .avatar-6qzftW,
+.channel-1Shao0[href='/discovery'] .avatar-6qzftW,
+.channel-1Shao0[href='/library'] .avatar-6qzftW,
+.channel-1Shao0[href='/store'] .avatar-6qzftW {
+	margin: 0;
+	flex-grow: 1;
+}
+
+.layout-1qmrhw {
+	justify-content: center;
+}
+
+/* Compatibility for MembersList */
+#MemberCount {
+	width: auto !important;
+	margin-top: 0 !important;
+}
+
+#MemberCount .membersGroup-2eiWxl {
+	height: auto;
 }
 
 /* Private channels horizontal icons */
